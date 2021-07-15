@@ -12,3 +12,8 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: . # The folder the action should deploy.
+      - name: Store_as_artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: page
+          path: index.html
